@@ -1,0 +1,26 @@
+:root {
+    --black: #111111;
+}
+
+.main-container {
+    max-width: 80vw;
+    margin: 2rem auto;
+}
+
+.output-screen {
+    min-height: 2rem;
+    padding: 0rem 0.5rem;
+    padding-top: 1rem;
+    background-color: grey;
+    max-width: 30vw;
+    margin: auto;
+    text-align: right;
+}
+
+.number-button {
+    text-align: center;
+}
+
+.btn-small{
+    padding: 1rem;
+}
