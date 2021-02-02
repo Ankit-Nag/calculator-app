@@ -1,22 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 
 :root {
-    --black: #111111;
+    --almost-black: #17191D;
+    --black: #060709;
+    --red: #B01712;
+    --dark-red: #550F0D;
+    --light-grey: #A49FA1;
+    --dark-grey: #3D3F41;
+    --ultradark-grey: rgba(44, 44, 46, 0.75);
+    --T-ultradark-grey: rgba(1, 1, 2, 0.25);
+    --grey: #887F81;
+    --silver: rgb(229, 229, 234);
+    --white: rgb(242, 242, 247);
+    --green: #69a838;
+    --blue: #8ca1b8;
+}
+
+html{
+    background-color: var(--almost-black);
 }
 
 .main-container {
-    max-width: 80vw;
-    margin: 2rem auto;
+    max-width: 50vw;
+    min-width: 20vw;
+    margin: auto;
+    padding: 1rem;
+    background-color: var(--silver);
+    border-radius: 1rem;
+    box-shadow: 1px 1px 10px var(--almost-black) inset ;
 }
 
 .output-screen {
     min-height: 2rem;
     padding: 0rem 0.5rem;
     padding-top: 1rem;
-    background-color: grey;
+    background-color: var(--almost-black);
+    color: var(--white);
     max-width: 30vw;
     margin: auto;
     text-align: right;
+    border-radius: 0.5rem;
 }
 
 .number-button {
@@ -29,8 +52,9 @@ button{
 }
 
 .button{
-    background-color: aliceblue;
-    border: solid black 2px;
+    border-radius: 0.5rem;
+    background-color: var(--green);
+    border: solid var(--almost-black) 1px;
 }
 
 .btn-small{

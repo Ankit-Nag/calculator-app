@@ -28,26 +28,27 @@ function outputDisplay(input) {
                 break;
         }
         operator = "=";
-        output.innerText = result.toFixed(4);
-
+        if(result%1==0){
+            output.innerText = result;
+        }
+        else{
+            output.innerText = result.toFixed(4);
+        }
+       
     } else if (input === "+") {
         num1 = parseFloat(output.innerText);
-        console.log(num1);
         output.innerText = "";
         operator = "+";
     } else if (input === "-") {
         num1 = parseFloat(output.innerText);
-        console.log(num1);
         output.innerText = "";
         operator = "-";
     } else if (input === "*") {
         num1 = parseFloat(output.innerText);
-        console.log(num1);
         output.innerText = "";
         operator = "*";
     } else if (input === "/") {
         num1 = parseFloat(output.innerText);
-        console.log(num1);
         output.innerText = "";
         operator = "/";
     }
